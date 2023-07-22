@@ -21,6 +21,7 @@ struct ContentView: View {
        TabView(selection: $currentTab, content: {
            
           HomePageView()
+               .environmentObject(cartManager)
            
            Text("Search View")
                .frame(maxWidth: .infinity, maxHeight: .infinity)

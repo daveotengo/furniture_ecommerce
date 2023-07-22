@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CartButton: View {
-    
+    //@EnvironmentObject var cartManager: CartManager
+
     var numberOfProducts : Int
     var body: some View {
         ZStack(alignment: .topTrailing){
@@ -30,5 +31,6 @@ struct CartButton: View {
 struct CartButton_Previews: PreviewProvider {
     static var previews: some View {
         CartButton(numberOfProducts: 1)
+            //environmentObject(CartManager())
     }
 }
